@@ -1,0 +1,160 @@
+
+$main-color:#f09d4f;
+.container{
+  padding-inline:3rem;
+}
+.detailed-product-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block:1.5rem;
+}
+
+.detailed-product-img{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+
+}
+.detailed-product-text{
+width:50%;
+}
+
+.detailed-product-gallery{
+width: 100%;
+}
+
+.detailed-img{
+  border-radius: 0.5rem;
+  width: 100%;
+
+}
+.image-cont{
+  border-radius: 0.5rem;
+  border: 3px solid $main-color;
+  overflow: hidden;
+}
+
+.product-other-images{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.other-images{
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+border: 3px solid transparent;
+}
+.other-images:hover .w-100{
+  border-color: $main-color;
+}
+.other-images:hover .layer{
+  z-index:999;
+}
+.layer{
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000003c;
+}
+.w-100{
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.7s;
+  cursor: pointer;
+  width: 100%;
+}
+.w-100:hover{
+
+}
+.add-to-cart{
+  transition: all 0.7s;
+  cursor:pointer;
+  border-radius: 0.5rem;
+  background-color: $main-color;
+  padding-inline:2rem;
+  padding-block:0.5rem;
+  border: 0;
+  color:#fff;
+}
+.add-to-cart:hover{
+  color: #000;
+}
+.add-to-cart fa-icon{
+  margin-inline:0.5rem;
+}
+.detailed-product-btns{
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-block: 1.5rem;
+
+}
+.inc-dec{
+  border-radius: 0.5rem;
+  padding-block:0.5rem;
+  padding-inline:0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background-color: #f7f8fd;
+  border: 0;
+}
+.inc,.dec{
+  padding-inline:0.5rem;
+cursor:pointer;
+}
+
+// text
+
+.title{
+  padding-block: 1rem;
+  color: $main-color;
+}
+.model{
+  padding-block: 1rem;
+  color:#000;
+  font-weight: 900;
+}
+.price span{
+  font-weight: 900;
+}
+.discount{
+  background-color: $main-color;
+  border-radius: 0.5rem;
+  padding:0.25rem;
+  margin-inline: 1rem;
+}
+.description{
+  padding-block: 1rem;
+  color:#a9a9af;
+}
+.discount-value{
+  margin-block: 1rem;
+  color: #a9a9af;
+}
+.discount-value span{
+  margin-inline: 0.5rem;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width:768px){
+.detailed-product-cont{
+  flex-direction: column;
+}
+.detailed-product-img{
+  width: 100%;
+}
+.detailed-product-text{
+  width: 100%;
+}
+}

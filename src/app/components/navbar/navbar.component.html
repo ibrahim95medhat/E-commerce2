@@ -1,0 +1,46 @@
+<div class="navbar" [dir]="'direction' | translate">
+
+    <div class="navbar-toggler">
+
+        <input type="checkbox" id="toggler-cb">
+        <label class="toggler-label-cb" for="toggler-cb"><div class="toggler"><fa-icon class="fs-1x" [icon]="faBars"></fa-icon></div> </label>
+
+
+      <div class="nav-container">
+        <div class="nav-sec1">
+          <div class="logo w-10"><img class="w-100" src="../../../assets/images/alibabLogo.png"></div>
+          <div class="search"><input class="nav-search m-auto" placeholder="what are you looking for?"></div>
+          <div class="icons"><span (click)="toggleLanguage()" class="lang-icon">{{languageDirection==='rtl'? 'en':'ع'}}</span><fa-icon class="mx-2" [icon]="faUser"></fa-icon><fa-icon class="mx-2 " [icon]="faHeart"></fa-icon><span class="cartIcon"><fa-icon [icon]="faCartShopping"></fa-icon><span class="badge">{{productNumber}}</span></span></div>
+        </div>
+
+
+        <div class="nav-sec2">
+
+          <input id="all-categ-cb" type="checkbox">
+          <label class="check-label" for="all-categ-cb">
+            <fa-icon class="angel-up" [icon]="faAngleUp"></fa-icon>
+            <fa-icon class="angel-down" [icon]="faAngleDown"></fa-icon>
+          </label>
+
+    <ul class="nav-links">
+      <!-- <li><fa-icon class="angel-up" [icon]="faAngleUp"></fa-icon></li> -->
+      <li>categories</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+      <li>Navigation</li>
+    </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+
+</div>
+

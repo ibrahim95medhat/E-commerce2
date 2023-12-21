@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="card-header-cont">
+    <h4 class="cards-header">Recommended for you</h4>
+    <div class="see-all">see all</div>
+  </div>
+
+<div class="card-container">
+  <div *ngFor="let product of products" class="card" >
+      <img (click)="detailedProduct(product.id)" [src]="product.imageCover" alt="Product 1">
+
+    <p class="price">{{product?.price}} EGP</p>
+    <p class="category">{{product?.subcategory[0].name}}</p>
+    <h4 class="title">{{product?.title.split(' ').splice(0,2).join(" ")}}</h4>
+    <p class="description">{{product?.description.split(' ').splice(0,1).join(" ")}} ....</p>
+    <div class="rating">★★★★☆ {{product?.ratingsQuantity}}</div>
+    <button (click)="addToCart()" class="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+
+</div>
+
+
+
+
+</div>

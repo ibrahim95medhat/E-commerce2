@@ -1,0 +1,45 @@
+$main-color:#f09d4f;
+.carsoul-container{
+  padding-block:1rem;
+  padding-inline:1.5rem;
+}
+.carsoul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carsoul-img-cont{
+width: 30%;
+}
+.carsoul-sliders{
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+  width: 30%;
+}
+.carsoul-text{
+width: 30%;
+}
+.carsoul-img{
+  width: 100%
+}
+.btn-left,.btn-right{
+  width: fit-content;
+  margin-block: 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: $main-color;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+.carsoul-btn{
+  cursor: pointer;
+  margin-block: 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: $main-color;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 0;
+}

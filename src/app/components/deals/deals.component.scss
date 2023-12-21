@@ -1,0 +1,161 @@
+$main-color:#f09d4f;
+$main-border-color:#ed7c12;
+.deals-options{
+  display: flex;
+  gap: 8px;
+  padding-block: 2rem;
+}
+.card-header-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.see-all{
+  cursor:pointer;
+  color: $main-color;
+}
+.deal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-block: 0.5rem;
+}
+.deal.active{
+  background-color: $main-color;
+}
+.percent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.25rem solid $main-border-color;
+  border-left-color: #ddd;
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+.percent span{
+  display: block;
+  transform: rotate(-45deg);
+}
+.percent::after{
+
+}
+.container {
+  max-width: 1200px;
+  // margin-block
+  // margin: 20px auto;
+}
+.cards-header::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  inset-inline-start: 0;
+  inset-block-start: 50%;
+  transform: translate(-50%,-50%);
+  background-color: red;
+}
+
+.cards-header{
+  padding-inline:0.25rem ;
+  padding-block:1.5rem;
+  text-align: start;
+  color: #333;
+  position: relative;
+}
+.card-container{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.card {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.category {
+  color: #333;
+}
+
+.title {
+  color: #333;
+}
+
+.description {
+  color: #555;
+}
+
+.rating {
+  color: $main-color; /* Gold color */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: $main-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+
+// start responisve
+
+@media only screen and (max-width:992px){
+  .card-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card{
+    width: 30%;
+  }
+}
+@media only screen and (max-width:768px){
+
+  .card{
+    width: 49%;
+  }
+  .deals-options{
+    flex-wrap: wrap;
+  }
+  .deal{
+    margin: 0;
+    width: 49%;
+  }
+}
+@media only screen and (max-width:478px){
+
+
+  .deal{
+    margin: 0;
+    width: 100%;
+  }
+}
+// end responisve
